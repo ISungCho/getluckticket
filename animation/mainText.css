@@ -1,0 +1,55 @@
+.bracket-box{
+	position: relative;
+	top: -85px;
+}
+.helloPosition{
+	position: relative;
+	top: 38px;
+}
+#bracketLeft{
+	position: relative;
+	top: 30px;
+	left: -140px;
+	opacity: 0;
+	height: 189px;
+	/* transition: all 0.1s ease; */
+}
+#bracketRight{
+	position: relative;
+	top: 30px;
+	left: 140px;
+	opacity: 0;
+	height: 189px;
+	/* transition: all 0.1s ease; */
+}
+@media(max-width: 768px){
+	.helloPosition{
+		position: relative;
+		top: 10px;
+	}
+	.bracket-box{
+		position: relative;
+		top: 9px;
+	}
+	#bracketLeft{
+		display: none;
+	}
+	#bracketRight{
+		display: none;
+	}
+}
+
+#typed-strings{
+	display: none;
+}
+#typed-strings2{
+	display: none;
+}
+
+/* #typed{
+	z-index: 1;
+}
+
+#typed2{
+	z-index: 2;
+} */

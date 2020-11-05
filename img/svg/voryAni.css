@@ -1,0 +1,73 @@
+
+.svgImg{
+	/* overflow: hidden; */
+	position: relative;
+}
+
+/* first animation image */
+.move1{
+	position: absolute;
+	animation: moving 30s;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+@keyframes moving {
+	0%{
+		opacity: 1;
+		transform: translateX(0)
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(-100%);
+	}
+}
+/* second animation image */
+.move2{
+	position: absolute;
+	animation: moving2 60s infinite;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+@keyframes moving2 {
+	0%{
+		opacity: 1;
+		transform: translateX(100%)
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(-100%)
+	}
+}
+/* third animation image */
+.move3{
+	position: absolute;
+	animation: moving3 60s infinite;
+	animation-timing-function: linear;
+	animation-delay: 30s;
+	opacity: 0;
+}
+@keyframes moving3 {
+	0%{
+		opacity: 1;
+		transform: translateX(100%)
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(-100%)
+	}
+}
+/* cloud moving */
+.upDown{
+	animation: upDown 5s infinite; 
+}
+@keyframes upDown {
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(15px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
