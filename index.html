@@ -396,15 +396,27 @@
       })
       const sections = document.getElementsByClassName('nerdFactory_content')
       const sectionsLen = sections.length
-      let index = 0
+      let index = -1
       addEventListener('keydown', (e) => {
-        if (e.keyCode === 13) {
-          if (index < sectionsLen) {
-            window.scrollTo(0, sections[index].offsetTop, 'smooth')
+        console.log(e.keyCode)
+        if (e.keyCode === 190) {
+          if (index < sectionsLen - 1 && index >= -1) {
             index++
+            window.scrollTo(0, sections[index].offsetTop, 'smooth')
           } else {
-						window.scrollTo(0, 0, 'smooth')
-            index = 0
+            index = -1
+            window.scrollTo(0, 0, 'smooth')
+          }
+        } else if (e.keyCode === 188) {
+          if (index <= 0) {
+            window.scrollTo(0, 0, 'smooth')
+            index = -1
+          } else if (index >= sectionsLen) {
+            index = sectionsLen - 1
+            window.scrollTo(0, sections[index].offsetTop, 'smooth')
+          } else {
+            index--
+            window.scrollTo(0, sections[index].offsetTop, 'smooth')
           }
         }
       })
