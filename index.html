@@ -1,375 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Get Lucky Ticket</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico" />
+    <link rel="stylesheet" href="animation/voryAni.css" />
+    <link rel="stylesheet" href="animation/mainText.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/naviStyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Get Lucky Ticket</title>
-	<link rel="shortcut icon" href="img/logo/favicon.ico" />
-	<link rel="stylesheet" href="animation/voryAni.css" />
-	<link rel="stylesheet" href="animation/mainText.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/naviStyle.css" />
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
-	<div class="nerdFactory_container">
-		<div class="nav_wrapper">
-			<div class="nerdFactory_head">
-				<div class="spinner-master">
-					<input type="checkbox" id="spinner-form" />
-					<label for="spinner-form" class="spinner-spin">
-						<div class="spinner diagonal part-1"></div>
-						<div class="spinner horizontal"></div>
-						<div class="spinner diagonal part-2"></div>
-					</label>
-				</div>
-				<a href="/" id="nerdFactoryServiceLogo">
-					<img class="nerdFactory_logo" src="img/logo/whatap_logo_re.svg" alt="" name="aivoryLogo">
-				</a>
-				<nav id="menu" class="menu">
-					<ul class="dropdown">
-						<li><a href="https://whatap.io/" onclick="window.open(this.href); return false;"
-								class="navi_nerd">와탭랩스</a>
-						</li>
-						<li><a href="https://www.whatap.io/ko/blog/main/" onclick="window.open(this.href); return false;"
-								class="navi_contact">기술블로그</a>
-						</li>
-						<li><a href="http://container.whatap.io:8088/v2/account/project/list" onclick="window.open(this.href); return false;"
-								class="navi_nerd">와탭모니터링</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="sections_wrapper">
-			<div class="nerdFactory_banner">
-				<div class="wrapper">
-					<div id="typed-strings">
-						<h1 class="nerdFactory_title">CHUNGNAM UNIV.</h1>
-					</div>
-					<div id="typed-strings2">
-						<h1 class="nerdFactory_title">HELLO</h1>
-					</div>
-					<div class="nerdFactory_title_wrapper">
-						<span class="nerdFactory_title helloPosition" id="typed2"></span>
-						<div class="bracket-box">
-							<img id="bracketLeft" src="img/animation/LeftBracket.png" alt="">
-							<span class="nerdFactory_title" id="typed"></span>
-							<img id="bracketRight" src="img/animation/RightBracket.png" alt="">
-						</div>
-					</div>
-					<p class="nerdFactory_subTitle">"운이 좋았습니다"<br />심리학도가 프론트엔드 개발자가 되기까지</p>
-				</div>
-			</div>
-			<div style="margin-top: 7vh">
-				<div id="voryWalkingAni">
-					<div id="bear_walk_step_img" class="vory_walking_img" onclick="jumpFunc()" ondblclick="bigJumpFunc()"> </div>
-				</div>
-				<div class="iframe_wrap">
-					<iframe src="animation/voryAni.html" width="100%" height="160" frameborder="0" scrolling="no"></iframe>
-				</div>
-			</div>
-			<div class="scrolling-box">
-				<section id="history_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">히스토리</h2>
-							<p class="content_subTitle">별거 없지만 이렇게 살아왔습니다</p>
-						</div>
-						<hr class="titleLine">
-						<div class="content_article">
+  <body>
+    <div class="nerdFactory_container">
+      <div class="nav_wrapper">
+        <div class="nerdFactory_head">
+          <div class="spinner-master">
+            <input type="checkbox" id="spinner-form" />
+            <label for="spinner-form" class="spinner-spin">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+            </label>
+          </div>
+          <a href="/" id="nerdFactoryServiceLogo">
+            <img class="nerdFactory_logo" src="img/logo/whatap_logo_re.svg" alt="" name="aivoryLogo" />
+          </a>
+          <nav id="menu" class="menu">
+            <ul class="dropdown">
+              <li>
+                <a href="https://whatap.io/" onclick="window.open(this.href); return false;" class="navi_nerd"
+                  >와탭랩스</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.whatap.io/ko/blog/main/"
+                  onclick="window.open(this.href); return false;"
+                  class="navi_contact"
+                  >기술블로그</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://container.whatap.io:8088/v2/account/project/list"
+                  onclick="window.open(this.href); return false;"
+                  class="navi_nerd"
+                  >와탭모니터링</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="sections_wrapper">
+        <div class="nerdFactory_banner">
+          <div class="wrapper">
+            <div id="typed-strings">
+              <h1 class="nerdFactory_title">CHUNGNAM UNIV.</h1>
+            </div>
+            <div id="typed-strings2">
+              <h1 class="nerdFactory_title">HELLO</h1>
+            </div>
+            <div class="nerdFactory_title_wrapper">
+              <span class="nerdFactory_title helloPosition" id="typed2"></span>
+              <div class="bracket-box">
+                <img id="bracketLeft" src="img/animation/LeftBracket.png" alt="" />
+                <span class="nerdFactory_title" id="typed"></span>
+                <img id="bracketRight" src="img/animation/RightBracket.png" alt="" />
+              </div>
+            </div>
+            <p class="nerdFactory_subTitle">"운이 좋았습니다"<br />심리학도가 프론트엔드 개발자가 되기까지</p>
+          </div>
+        </div>
+        <div style="margin-top: 7vh">
+          <div id="voryWalkingAni">
+            <div id="bear_walk_step_img" class="vory_walking_img" onclick="jumpFunc()" ondblclick="bigJumpFunc()"></div>
+          </div>
+          <div class="iframe_wrap">
+            <iframe src="animation/voryAni.html" width="100%" height="160" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+        <div class="scrolling-box">
+          <section id="history_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">히스토리</h2>
+                <p class="content_subTitle">별거 없지만 이렇게 살아왔습니다</p>
+              </div>
+              <hr class="titleLine" />
+              <div class="content_article">
                 <ul class="timeline">
-                    <!-- Item 1 -->
-                    <li>
-                      <div class="direction-r">
-                        <div class="flag-wrapper">
-                          <span class="flag">충남대 심리학과 입학</span>
-                          <span class="time-wrapper"><span class="time">2013.03</span></span>
+                  <!-- Item 1 -->
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="flag">충남대 심리학과 입학</span>
+                        <span class="time-wrapper"><span class="time">2013.03</span></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- Item 2 -->
+                  <li>
+                    <div class="direction-l">
+                      <div class="flag-wrapper">
+                        <span class="flag">연계전공 시작</span>
+                        <span class="time-wrapper"><span class="time">2015.09</span></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- Item 3 -->
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="flag">플랜아이 입사</span>
+                        <span class="time-wrapper"><span class="time">2018.07</span></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- Item 4 -->
+                  <li>
+                    <div class="direction-l">
+                      <div class="flag-wrapper">
+                        <span class="flag">충남대학교 졸업</span>
+                        <span class="time-wrapper"><span class="time">2018.08</span></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- Item 5 -->
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="flag">와탭랩스 이직</span>
+                        <span class="time-wrapper"><span class="time">2019.11</span></span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="whatap_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">와탭랩스</h2>
+                <p class="content_subTitle">와탭랩스는 IT시스템을 위한 모니터링 솔루션입니다</p>
+              </div>
+              <hr class="titleLine" />
+
+              <div class="content_article">
+                <div class="sectionOne_box">
+                  <h3 class="content_article_title">건강 검진 시스템</h3>
+                  <p class="content_article_subTitle">
+                    원활한 IT서비스를 제공할 수 있도록<br />서비스의 장애를 <b>예방</b>하고, 빠르게 <b>해결</b>하도록
+                    돕습니다.
+                  </p>
+                </div>
+                <div class="sectionOne_box">
+                  <h3 class="content_article_title">Saas형 모니터링</h3>
+                  <p class="content_article_subTitle">
+                    국내 모니터링 솔루션 중에서 <b>유일</b>하게 <br />
+                    클라우드 환경에서 모니터링 서비스를 제공합니다.
+                  </p>
+                </div>
+                <div class="sectionOne_box noneMargin">
+                  <h3 class="content_article_title">국내 최초/최고</h3>
+                  <p class="content_article_subTitle">
+                    한국 모니터링계의 <b>시초이자 리더</b>가<br />CTO(김성조)로 계십니다
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="frontend_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">프론트엔드</h2>
+                <p class="content_subTitle">프론트엔드는 웹의 화면을 만드는 사람입니다</p>
+              </div>
+              <hr class="titleLine" />
+              <div class="content_article">
+                <div class="iframe_wrap">
+                  <iframe src="test/index.html" width="100%" height="300" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="main_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">운이 좋았습니다</h2>
+                <p class="content_subTitle">어쩌면 운을 만들었습니다.</p>
+              </div>
+              <hr class="titleLine" />
+              <div class="content_article">
+                <div class="row">
+                  <div class="sectionTwo_box right">
+                    <h3 class="content_article_title textLeft">01</h3>
+                    <p class="content_article_subTitle">3학년 1학기 복학과 <br /><b>연계전공</b> 시작</p>
+                  </div>
+                  <div class="sectionTwo_box right">
+                    <h3 class="content_article_title textLeft">02</h3>
+                    <p class="content_article_subTitle">미국 퍼듀대학교에서의 <b>좋은 인연</b></p>
+                  </div>
+                  <div class="sectionTwo_box right">
+                    <h3 class="content_article_title textLeft">03</h3>
+                    <p class="content_article_subTitle">첫 직장과<br /><b>프론트엔드</b> 첫 업무</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="sectionTwo_box left">
+                    <h3 class="content_article_title textLeft">01</h3>
+                    <p class="content_article_subTitle">새로운 분야의 <b>도전</b>과<br />등산하는 <b>마음</b></p>
+                  </div>
+                  <div class="sectionTwo_box left">
+                    <h3 class="content_article_title textLeft">02</h3>
+                    <p class="content_article_subTitle">스쳐가는 인연을<br /><b>의미</b>있는 인연으로</p>
+                  </div>
+                  <div class="sectionTwo_box left">
+                    <h3 class="content_article_title textLeft">03</h3>
+                    <p class="content_article_subTitle">
+                      맡은 업무를 책임지고<br />
+                      끝까지 해내고자한 <b>오기</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="conclusion_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">대학은 기회의 장</h2>
+                <p class="content_subTitle">주위를 둘러보면 좋은 기회가 항상 함께하고 있습니다</p>
+              </div>
+              <hr class="titleLine" />
+              <div class="content_article">
+                <div class="sectionOne_box">
+                  <h3 class="content_article_title">심리학</h3>
+                  <p class="content_article_subTitle">
+                    심리학은 어느 곳에서나<br /><b>중요한 강점</b>이 될 수 있습니다.<br />여러분의 전공을 자랑스러워하고
+                    활용하세요
+                  </p>
+                </div>
+                <div class="sectionOne_box">
+                  <h3 class="content_article_title">대학 내 프로그램</h3>
+                  <p class="content_article_subTitle">
+                    대학 내에는 여러분을 위한<br />수많은 <b>해택</b>이 있습니다.<br />
+                    그 혜택을 놓치지 마세요.
+                  </p>
+                </div>
+                <div class="sectionOne_box noneMargin">
+                  <h3 class="content_article_title">사람, 사람, 사람</h3>
+                  <p class="content_article_subTitle">
+                    제 생각에는<br />대학에서 <b>가장 중요한 것</b>은<br />사람입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="vory-box">
+            <img id="voryAni" class="voryImg" src="img/svg/vory@3x.png" alt="" />
+          </div>
+          <section id="member_section" class="nerdFactory_content">
+            <div class="wrapper">
+              <div class="content_title_wrapper">
+                <h2 class="content_title">와랩랩스 멤버</h2>
+                <p class="content_subTitle">미래에 개발자가 된다면 한 번 도전 해보세요</p>
+              </div>
+              <hr class="titleLine" />
+              <div class="content_article">
+                <div class="row">
+                  <div class="sectionThird_box">
+                    <img class="member_pic" src="img/member/img_Cho_isung.png" alt="" />
+                    <div class="member_name_wrap">
+                      <span class="member_name">조이성</span>
+                    </div>
+                    <div class="member_info_wrap">
+                      <span class="member_info">Web Frontend Developer</span>
+                    </div>
+                  </div>
+                  <div class="sectionThird_box">
+                    <a
+                      class="member-link"
+                      href="https://www.whatap.io/ko/careers/"
+                      onclick="window.open(this.href); return false;"
+                    >
+                      <div id="member-hover" class="member-hover">
+                        <div class="member-hover-content">
+                          <span class="fas fa-plus fa-3x">+</span>
                         </div>
                       </div>
-                    </li>
-                    
-                    <!-- Item 2 -->
-                    <li>
-                      <div class="direction-l">
-                        <div class="flag-wrapper">
-                          <span class="flag">연계전공 시작</span>
-                          <span class="time-wrapper"><span class="time">2015.09</span></span>
-                        </div>
-                      </div>
-                    </li>
-                  
-                    <!-- Item 3 -->
-                    <li>
-                      <div class="direction-r">
-                        <div class="flag-wrapper">
-                          <span class="flag">플랜아이 입사</span>
-                          <span class="time-wrapper"><span class="time">2018.07</span></span>
-                        </div>
-                      </div>
-                    </li>
-                    
-                    <!-- Item 4 -->
-                    <li>
-                        <div class="direction-l">
-                          <div class="flag-wrapper">
-                            <span class="flag">충남대학교 졸업</span>
-                            <span class="time-wrapper"><span class="time">2018.08</span></span>
-                          </div>
-                        </div>
-                      </li>
+                      <img class="member_pic" src="img/member/img-new-member.png" alt="" />
+                    </a>
+                    <div class="member_name_wrap">
+                      <span class="member_name">미래의 멤버</span>
+                    </div>
+                    <div class="mamber_txt_wrap">
+                      <span class="member_info">와랩랩스와<br />함께하실 분을 찾습니다</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="aivory_footer">
+          <div class="wrapper">
+            <div class="footer_logo">
+              <img src="img/logo/whatap_logo_re.svg" alt="" />
+            </div>
+            <div class="footer_text">
+              <p><span>Email. </span>chois05@whatap.io</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        walking()
+      })
 
-                    <!-- Item 5 -->
-                    <li>
-                      <div class="direction-r">
-                        <div class="flag-wrapper">
-                          <span class="flag">와탭랩스 이직</span>
-                          <span class="time-wrapper"><span class="time">2019.11</span></span>
-                        </div>
-                      </div>
-                    </li>
-                    
-                  </ul>
-					</div>
-				</section>
-				<section id="whatap_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">와탭랩스</h2>
-							<p class="content_subTitle">와탭랩스는 IT시스템을 위한 모니터링 솔루션입니다</p>
-						</div>
-						<hr class="titleLine">
+      let tID //we will use this variable to clear the setInterval()
+      function walking() {
+        let position = 50 //start position for the image slicer
+        const interval = 200 //100 ms of interval for the setInterval()
+        tID = setInterval(() => {
+          document.getElementById('bear_walk_step_img').style.backgroundPosition = `-${position}px 0px`
+          //we use the ES6 template literal to insert the variable "position"
+          if (position < 400) {
+            position = position + 50
+          }
+          //we increment the position by 256 each time
+          else {
+            position = 50
+          }
+          //reset the position to 256px, once position exceeds 1536px
+        }, interval) //end of setInterval
+      }
 
-						<div class="content_article">
-							<div class="sectionOne_box">
-								<h3 class="content_article_title">건강 검진 시스템</h3>
-								<p class="content_article_subTitle">원활한 IT서비스를 제공할 수 있도록<br/>서비스의 장애를 <b>예방</b>하고, 빠르게 <b>해결</b>하도록 돕습니다.</p>
-							</div>
-							<div class="sectionOne_box">
-								<h3 class="content_article_title">Saas형 모니터링</h3>
-								<p class="content_article_subTitle">국내 모니터링 솔루션 중에서 <b>유일</b>하게 <br/> 클라우드 환경에서 모니터링 서비스를 제공합니다.</p>
-							</div>
-							<div class="sectionOne_box noneMargin">
-								<h3 class="content_article_title">국내 최초/최고</h3>
-								<p class="content_article_subTitle">한국 모니터링계의 <b>시초이자 리더</b>가<br/>CTO(김성조)로 계십니다</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section id="frontend_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">프론트엔드</h2>
-							<p class="content_subTitle">프론트엔드는 웹의 화면을 만드는 사람입니다</p>
-						</div>
-						<hr class="titleLine">
-						<div id='myArea' class="content_article">
-							<div class="iframe_wrap">
-								<iframe src="test/index.html" width="100%" height="300" frameborder="0"></iframe>
-							<div>
-						</div>
-					</div>
-				</section>
-				<section id="main_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">운이 좋았습니다</h2>
-							<p class="content_subTitle">어쩌면 운을 만들었습니다.</p>
-						</div>
-						<hr class="titleLine">
-						<div class="content_article">
-							<div class="row">
-								<div class="sectionTwo_box right">
-									<h3 class="content_article_title textLeft">01</h3>
-									<p class="content_article_subTitle">3학년 1학기 복학과 <br/><b>연계전공</b> 시작</p>
-								</div>
-								<div class="sectionTwo_box right">
-									<h3 class="content_article_title textLeft">02</h3>
-									<p class="content_article_subTitle">미국 퍼듀대학교에서의 <b>좋은 인연</b></p>
-								</div>
-								<div class="sectionTwo_box right">
-									<h3 class="content_article_title textLeft">03</h3>
-									<p class="content_article_subTitle">첫 직장과<br/><b>프론트엔드</b> 첫 업무</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="sectionTwo_box left">
-									<h3 class="content_article_title textLeft">01</h3>
-									<p class="content_article_subTitle">새로운 분야의 <b>도전</b>과<br/>등산하는 <b>마음</b></p>
-								</div>
-								<div class="sectionTwo_box left">
-									<h3 class="content_article_title textLeft">02</h3>
-									<p class="content_article_subTitle">스쳐가는 인연을<br/><b>의미</b>있는 인연으로</p>
-								</div>
-								<div class="sectionTwo_box left">
-									<h3 class="content_article_title textLeft">03</h3>
-									<p class="content_article_subTitle">맡은 업무를 책임지고<br/> 끝까지 해내고자한 <b>오기</b></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section id="conclusion_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">대학은 기회의 장</h2>
-							<p class="content_subTitle">주위를 둘러보면 좋은 기회가 항상 함께하고 있습니다</p>
-						</div>
-						<hr class="titleLine">
+      let timer = 0
+      function jumpFunc() {
+        timer = setTimeout(function() {
+          let $voryWalking = $('#voryWalkingAni')
+          $voryWalking.addClass('vory_walking_ani')
+          setTimeout(function() {
+            $voryWalking.removeClass('vory_walking_ani')
+          }, 1000)
+        }, 200)
+      }
+      function bigJumpFunc() {
+        clearTimeout(timer)
+        let $voryWalking = $('#voryWalkingAni')
+        $voryWalking.addClass('vory_walking_ani2')
+        setTimeout(function() {
+          $voryWalking.removeClass('vory_walking_ani2')
+        }, 1000)
+      }
+      $('.vory-box').css({
+        top: $('#main_section').offset().top + $('#main_section').height() + 130,
+      })
+      $(window).on('scroll', function() {
+        let $voryAni = $('#voryAni')
+        let tolerancePixel = 300
+        let scrollTop = $(window).scrollTop() + tolerancePixel
+        let scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel
 
-						<div class="content_article">
-							<div class="sectionOne_box">
-								<h3 class="content_article_title">심리학</h3>
-								<p class="content_article_subTitle">심리학은 어느 곳에서나<br/><b>중요한 강점</b>이 될 수 있습니다.<br/>여러분의 전공을 자랑스러워하고 활용하세요</p>
-							</div>
-							<div class="sectionOne_box">
-								<h3 class="content_article_title">대학 내 프로그램</h3>
-								<p class="content_article_subTitle">대학 내에는 여러분을 위한<br/>수많은 <b>해택</b>이 있습니다.<br/> 그 혜택을 놓치지 마세요.</p>
-							</div>
-							<div class="sectionOne_box noneMargin">
-								<h3 class="content_article_title">사람, 사람, 사람</h3>
-								<p class="content_article_subTitle">제 생각에는<br/>대학에서 <b>가장 중요한 것</b>은<br/>사람입니다.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<div class="vory-box">
-					<img id="voryAni" class="voryImg" src="img/svg/vory@3x.png" alt="">
-				</div>
-				<section id="member_section" class="nerdFactory_content">
-					<div class="wrapper">
-						<div class="content_title_wrapper">
-							<h2 class="content_title">와랩랩스 멤버</h2>
-							<p class="content_subTitle">미래에 개발자가 된다면 한 번 도전 해보세요</p>
-						</div>
-						<hr class="titleLine">
-						<div class="content_article">
-							<div class="row">
-								<div class="sectionThird_box">
-									<img class="member_pic" src="img/member/img_Cho_isung.png" alt="">
-									<div class="member_name_wrap">
-										<span class="member_name">조이성</span>
-									</div>
-									<div class="member_info_wrap">
-										<span class="member_info">Web Frontend Developer</span>
-									</div>
-								</div>
-								<div class="sectionThird_box">
-									<a class="member-link" href="https://www.whatap.io/ko/careers/" onclick="window.open(this.href); return false;">
-										<div id="member-hover" class="member-hover">
-											<div class="member-hover-content">
-												<span class="fas fa-plus fa-3x">+</span>
-											</div>
-										</div>
-										<img class="member_pic" src="img/member/img-new-member.png" alt="">
-									</a>
-									<div class="member_name_wrap">
-										<span class="member_name">미래의 멤버</span>
-									</div>
-									<div class="mamber_txt_wrap">
-										<span class="member_info">와랩랩스와<br />함께하실 분을 찾습니다</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="aivory_footer">
-				<div class="wrapper">
-					<div class="footer_logo">
-						<img src="img/logo/whatap_logo_re.svg" alt="">
-					</div>
-					<div class="footer_text">
-						<p><span>Email. </span>chois05@whatap.io</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
+        $voryAni.each(function(index, el) {
+          let yTopVory = $(this).offset().top
+          let yBottomVory = $(this).height() + yTopVory
 
-		$(document).ready(function () {
-			walking()
-		});
+          if (scrollTop <= yBottomVory && scrollBottom >= yTopVory) {
+            $voryAni.css({
+              animation: 'visibleVoryAni 2s',
+              'animation-fill-mode': 'forwards',
+              'transform-origin': 'left bottom',
+            })
+          } else {
+            $voryAni.css({
+              animation: 'hiddenVoryAni 2s',
+              'animation-fill-mode': 'forwards',
+              'transform-origin': 'left bottom',
+            })
+          }
+        })
+      })
+    </script>
+    <script>
+      document.getElementById('member-hover').onmouseover = function() {
+        mouseOver()
+      }
+      document.getElementById('member-hover').onmouseout = function() {
+        mouseOut()
+      }
 
-		let tID; //we will use this variable to clear the setInterval()
-		function walking() {
-			let position = 50; //start position for the image slicer
-			const interval = 200; //100 ms of interval for the setInterval()
-			tID = setInterval(() => {
-				document.getElementById("bear_walk_step_img").style.backgroundPosition =
-					`-${position}px 0px`;
-				//we use the ES6 template literal to insert the variable "position"
-				if (position < 400) { position = position + 50; }
-				//we increment the position by 256 each time
-				else { position = 50; }
-				//reset the position to 256px, once position exceeds 1536px
-			}
-				, interval); //end of setInterval
-		}
-
-		let timer = 0;
-		function jumpFunc() {
-			timer = setTimeout(function () {
-				let $voryWalking = $('#voryWalkingAni');
-				$voryWalking.addClass('vory_walking_ani');
-				setTimeout(function () { $voryWalking.removeClass('vory_walking_ani') }, 1000);
-			}, 200)
-		}
-		function bigJumpFunc() {
-			clearTimeout(timer);
-			let $voryWalking = $('#voryWalkingAni');
-			$voryWalking.addClass('vory_walking_ani2');
-			setTimeout(function () { $voryWalking.removeClass('vory_walking_ani2') }, 1000);
-		}
-		$('.vory-box').css({
-			'top': $('#main_section').offset().top + $('#main_section').height() + 130,
-		})
-		$(window).on('scroll', function () {
-			let $voryAni = $('#voryAni');
-			let tolerancePixel = 300;
-			let scrollTop = $(window).scrollTop() + tolerancePixel;
-			let scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
-
-			$voryAni.each(function (index, el) {
-				let yTopVory = $(this).offset().top;
-				let yBottomVory = $(this).height() + yTopVory;
-
-				if (scrollTop <= yBottomVory && scrollBottom >= yTopVory) {
-					$voryAni.css({
-						'animation': 'visibleVoryAni 2s',
-						'animation-fill-mode': 'forwards',
-						'transform-origin': 'left bottom'
-					})
-				} else {
-					$voryAni.css({
-						'animation': 'hiddenVoryAni 2s',
-						'animation-fill-mode': 'forwards',
-						'transform-origin': 'left bottom'
-					})
-				}
-			});
-		});
-	</script>
-	<script>
-		document.getElementById("member-hover").onmouseover = function () { mouseOver() };
-		document.getElementById("member-hover").onmouseout = function () { mouseOut() };
-
-		function mouseOver() {
-			document.getElementById("member-hover").style.opacity = 1;
-		}
-		function mouseOut() {
-			document.getElementById("member-hover").style.opacity = 0;
-		}
-	</script>
-	<script src="animation/mainText.js"></script>
-	<script src="script/naviScript.js"></script>
-</body>
-
+      function mouseOver() {
+        document.getElementById('member-hover').style.opacity = 1
+      }
+      function mouseOut() {
+        document.getElementById('member-hover').style.opacity = 0
+      }
+    </script>
+    <script src="animation/mainText.js"></script>
+    <script src="script/naviScript.js"></script>
+  </body>
 </html>
