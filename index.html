@@ -151,7 +151,7 @@
           <section id="whatap_section" class="nerdFactory_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
-                <h2 class="content_title">와탭랩스</h2>
+                <h2 class="content_title">와탭랩스?</h2>
                 <p class="content_subTitle">와탭랩스는 IT시스템을 위한 모니터링 솔루션입니다</p>
               </div>
               <hr class="titleLine" />
@@ -183,7 +183,7 @@
           <section id="frontend_section" class="nerdFactory_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
-                <h2 class="content_title">프론트엔드</h2>
+                <h2 class="content_title">프론트엔드?</h2>
                 <p class="content_subTitle">프론트엔드는 웹의 화면을 만드는 사람입니다</p>
               </div>
               <hr class="titleLine" />
@@ -393,6 +393,20 @@
             })
           }
         })
+      })
+      const sections = document.getElementsByClassName('nerdFactory_content')
+      const sectionsLen = sections.length
+      let index = 0
+      addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+          if (index < sectionsLen) {
+            window.scrollTo(0, sections[index].offsetTop, 'smooth')
+            index++
+          } else {
+						window.scrollTo(0, 0, 'smooth')
+            index = 0
+          }
+        }
       })
     </script>
     <script>
