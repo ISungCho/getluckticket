@@ -5,21 +5,9 @@
       width: 100%;
       height: 100%;
     }
-    #bear {
-      width: 100px;
-      height: 100px;
-    }
   </style>
   <body>
-    <img id="bear" src="./bear.svg" alt="" />
   </body>
   <script>
-    const bear = document.getElementById('bear')
-    const bearRect = bear.getBoundingClientRect()
-    document.addEventListener('mousemove', (e) => {
-      const x = e.clientX - bearRect.width / 2
-      const y = e.clientY - bearRect.height / 2
-      bear.style.transform = `translate(${x}px, ${y}px)`
-    })
   </script>
 </html>
