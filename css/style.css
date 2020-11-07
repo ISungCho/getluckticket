@@ -298,18 +298,22 @@ a > img{
 	}
 }
 
-#culture_section, #history_section{
-  background-color: #f4f5f7;
+#history_section{
+  background-image: linear-gradient(to bottom, white, #f1f1f1 50%, white);
 }
-#techBlog_section{
+/* #whatap_section{
 	background-image: linear-gradient(to top, rgba(240, 245, 252, 0.3), rgba(240, 245, 252, 0.3));
+} */
+#main_section{
+  background-color: #f4f5f7;
 }
 .textLeft{
 	text-align: left !important;
 }
 
-/* ================ The Timeline ================ */
-
+/*------------------------------------*\
+  #history
+\*------------------------------------*/
 .timeline {
   position: relative;
   width: 660px;
@@ -464,21 +468,104 @@ a > img{
 .time {
   display: inline-block;
   padding: 4px 6px;
-  background: rgb(248,248,248);
 }
 
-.desc {
-  margin: 1em 0.75em 0 0;
-  
-  font-size: 0.8em;
-  font-style: italic;
-  line-height: 1.5em;
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+	.timeline {
+		width: 100%;
+		padding: 4em 0 1em 0;
+	}
+	
+	.timeline li {
+		padding: 2em 0;
+	}
+	
+	.direction-l,
+	.direction-r {
+		float: none;
+		width: 100%;
+	
+		text-align: center;
+	}
+	
+	.flag-wrapper {
+		text-align: center;
+	}
+	
+	.flag {
+		background: rgb(255,255,255);
+		z-index: 15;
+	}
+	
+	.direction-l .flag:before,
+	.direction-r .flag:before {
+		position: absolute;
+		top: -30px;
+		left: 52%;
+		content: ' ';
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin-left: -9px;
+		background: #fff;
+		border-radius: 10px;
+		border: 4px solid #4469af;
+		z-index: 10;
+	}
+	
+	.direction-l .flag:after,
+	.direction-r .flag:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: -8px;
+		height: 0;
+		width: 0;
+		margin-left: -8px;
+		border: solid transparent;
+		border-bottom-color: rgb(255,255,255);
+		border-width: 8px;
+		pointer-events: none;
+	}
+	
+	.time-wrapper {
+		display: block;
+		position: relative;
+		margin: 4px 0 0 0;
+		z-index: 14;
+		top: 6px;
+	}
+	
+	.direction-l .time-wrapper {
+		float: none;
+	}
+	
+	.direction-r .time-wrapper {
+		float: none;
+	}
+	.time-wrapper .time {
+		background-color: #f4f5f7;
+	}
+	}
+
+/*------------------------------------*\
+  #frontend
+\*------------------------------------*/
+#frontend_section .content_article{
+	height: 300px;
+	border: 1px solid #e4e4e4;
+	border-radius: 7px;
+	overflow: hidden;
 }
 
-.direction-r .desc {
-  margin: 1em 0 0 0.75em;
-}
 
+#frontend_section #targetImg{
+  width: 100px;
+	height: 100px;
+}
 /*------------------------------------*\
   #member
 \*------------------------------------*/
@@ -538,107 +625,6 @@ a > img{
   background: #e6e9f0;
   color: #888b8a;
   padding: 0 5px;
-}
-
-
-/*------------------------------------*\
-  #blog
-\*------------------------------------*/
-
-.sectionFourth_box{
-	box-sizing: border-box;
-	width: 32%;
-	margin-right: 2%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-	border: solid 1px #dfdfdf;
-}
-@media(max-width: 768px){
-	.sectionFourth_box{
-		width: 100%;
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-}
-.sectionFourth_box > a{
-	text-decoration: none;
-}
-.blog_img{
-	width: 100%;
-	height: 135px;
-	object-fit: contain;
-	border-bottom: solid 1px #dfdfdf;
-}
-
-
-.blog_title_wrap{
-	/* margin: 5px 0; */
-	padding: 8px 14px 8px;
-	height: 54px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.blog_title{
-	font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: normal;
-	color: #5e626b;
-}
-
-.blog_summary_wrap{
-	padding: 4px 14px 7px;
-}
-.blog_author_img{
-	width: 25px;
-	vertical-align: middle;
-}
-.blog_author{
-	font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-size: 14px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #818182;
-}
-.blog_date{
-	float: right;
-	font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-size: 14px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #818182;
-}
-.blog_button{
-	font-family: 'Spoqa Han Sans', 'Sans-serif';
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-	color: #747c8b;
-	background-color: #fff;
-	padding: 6px 20px;
-	border-radius: 15px;
-	border: 1px solid #747c8b;
-	float: right;
-	cursor: pointer;
-}
-@media(max-width: 768px){
-	.blog_button{
-		margin-right: 15px
-	}
 }
 
 .member-link{
