@@ -98,20 +98,20 @@ a > img{
 .iframe_wrap iframe{
 	overflow: hidden;
 }
-.nerdFactory_banner{
+.whatap_banner{
 	width: 100%;
 	margin-top: 25vh;
 }
-.nerdFactory_title_wrapper{
+.whatap_title_wrapper{
 	height: 224px;
 	text-align: center;
 }
 @media(max-width: 768px) {
-  .nerdFactory_title_wrapper{
+  .whatap_title_wrapper{
 		height: 190px
 	}
 }
-.nerdFactory_title{
+.whatap_title{
   font-family: 'PixelSplitter';
   font-size: 46px;
   font-weight: bold;
@@ -123,30 +123,30 @@ a > img{
   color: #1E3257;
 }
 @media screen and  (min-width: 576px) {
-  .nerdFactory_title{
+  .whatap_title{
 		font-size: 61px;
 	}
 }
 
 @media screen and  (min-width: 768px) {
-  .nerdFactory_title{
+  .whatap_title{
 		font-size: 61px;
 	}
 }
 
 @media screen and  (min-width: 992px) {
-  .nerdFactory_title{
+  .whatap_title{
 		font-size: 61px;
 	}
 }
 
 @media screen and  (min-width: 1200px) {
-  .nerdFactory_title{
+  .whatap_title{
 		font-size: 61px;
 	}
 }
 
-.nerdFactory_subTitle{
+.whatap_subTitle{
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 18px;
   font-weight: 300;
@@ -169,7 +169,7 @@ a > img{
   #section
 \*------------------------------------*/
 
-.nerdFactory_content{
+.whatap_content{
 	padding-top: 120px;
 	padding-bottom: 120px;
 	width: 100%;
@@ -655,7 +655,7 @@ a > img{
   #footer
 \*------------------------------------*/
 
-.aivory_footer{
+.whatap_footer{
 	background-color: #132038;
 	color: #fff;
 	padding-top: 35px;
@@ -706,7 +706,7 @@ a > img{
 	text-align: center;
 }
 @media (min-width: 992px) {
-	.aivory_footer{
+	.whatap_footer{
 		padding-top: 35px;
 		padding-bottom: 25px;
 	}

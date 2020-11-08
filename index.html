@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>Get Lucky Ticket</title>
-    <link rel="shortcut icon" href="img/logo/favicon.ico" />
+    <link rel="shortcut icon" href="test/target.png" />
     <link rel="stylesheet" href="animation/voryAni.css" />
     <link rel="stylesheet" href="animation/mainText.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -16,9 +16,9 @@
   </head>
 
   <body>
-    <div class="nerdFactory_container">
+    <div class="whatap_container">
       <div class="nav_wrapper">
-        <div class="nerdFactory_head">
+        <div class="whatap_head">
           <div class="spinner-master">
             <input type="checkbox" id="spinner-form" />
             <label for="spinner-form" class="spinner-spin">
@@ -27,13 +27,13 @@
               <div class="spinner diagonal part-2"></div>
             </label>
           </div>
-          <a href="/" id="nerdFactoryServiceLogo">
-            <img class="nerdFactory_logo" src="img/logo/whatap_logo_re.svg" alt="" name="aivoryLogo" />
+          <a href="/" id="whatapServiceLogo">
+            <img class="whatap_logo" src="img/logo/whatap_logo_re.svg" alt="" name="whatapLogo" />
           </a>
           <nav id="menu" class="menu">
             <ul class="dropdown">
               <li>
-                <a href="https://whatap.io/" onclick="window.open(this.href); return false;" class="navi_nerd"
+                <a href="https://whatap.io/" onclick="window.open(this.href); return false;"
                   >와탭랩스</a
                 >
               </li>
@@ -47,9 +47,8 @@
               </li>
               <li>
                 <a
-                  href="http://container.whatap.io:8088/v2/account/project/list"
+                  href="https://service.whatap.io/"
                   onclick="window.open(this.href); return false;"
-                  class="navi_nerd"
                   >와탭모니터링</a
                 >
               </li>
@@ -58,23 +57,23 @@
         </div>
       </div>
       <div class="sections_wrapper">
-        <div class="nerdFactory_banner">
+        <div class="whatap_banner">
           <div class="wrapper">
             <div id="typed-strings">
-              <h1 class="nerdFactory_title">CHUNGNAM UNIV.</h1>
+              <h1 class="whatap_title">CHUNGNAM UNIV.</h1>
             </div>
             <div id="typed-strings2">
-              <h1 class="nerdFactory_title">HELLO</h1>
+              <h1 class="whatap_title">HELLO</h1>
             </div>
-            <div class="nerdFactory_title_wrapper">
-              <span class="nerdFactory_title helloPosition" id="typed2"></span>
+            <div class="whatap_title_wrapper">
+              <span class="whatap_title helloPosition" id="typed2"></span>
               <div class="bracket-box">
                 <img id="bracketLeft" src="img/animation/LeftBracket.png" alt="" />
-                <span class="nerdFactory_title" id="typed"></span>
+                <span class="whatap_title" id="typed"></span>
                 <img id="bracketRight" src="img/animation/RightBracket.png" alt="" />
               </div>
             </div>
-            <p class="nerdFactory_subTitle">"운이 좋았습니다"<br />심리학도가 프론트엔드 개발자가 되기까지</p>
+            <p class="whatap_subTitle">"운이 좋았습니다"<br />심리학도가 프론트엔드 개발자가 되기까지</p>
           </div>
         </div>
         <div style="margin-top: 7vh">
@@ -86,7 +85,7 @@
           </div>
         </div>
         <div class="scrolling-box">
-          <section id="history_section" class="nerdFactory_content">
+          <section id="history_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">히스토리</h2>
@@ -148,7 +147,7 @@
               </div>
             </div>
           </section>
-          <section id="whatap_section" class="nerdFactory_content">
+          <section id="whatap_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">와탭랩스?</h2>
@@ -180,7 +179,7 @@
               </div>
             </div>
           </section>
-          <section id="frontend_section" class="nerdFactory_content">
+          <section id="frontend_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">프론트엔드?</h2>
@@ -194,7 +193,7 @@
               </div>
             </div>
           </section>
-          <section id="main_section" class="nerdFactory_content">
+          <section id="main_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">운이 좋았습니다</h2>
@@ -236,7 +235,7 @@
               </div>
             </div>
           </section>
-          <section id="conclusion_section" class="nerdFactory_content">
+          <section id="conclusion_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">대학은 기회의 장</h2>
@@ -270,7 +269,7 @@
           <div class="vory-box">
             <img id="voryAni" class="voryImg" src="img/svg/vory@3x.png" alt="" />
           </div>
-          <section id="member_section" class="nerdFactory_content">
+          <section id="member_section" class="whatap_content">
             <div class="wrapper">
               <div class="content_title_wrapper">
                 <h2 class="content_title">와랩랩스 멤버</h2>
@@ -313,7 +312,7 @@
             </div>
           </section>
         </div>
-        <div class="aivory_footer">
+        <div class="whatap_footer">
           <div class="wrapper">
             <div class="footer_logo">
               <img src="img/logo/whatap_logo_re.svg" alt="" />
@@ -394,11 +393,10 @@
           }
         })
       })
-      const sections = document.getElementsByClassName('nerdFactory_content')
+      const sections = document.getElementsByClassName('whatap_content')
       const sectionsLen = sections.length
       let index = -1
       addEventListener('keydown', (e) => {
-        console.log(e.keyCode)
         if (e.keyCode === 190) {
           if (index < sectionsLen - 1 && index >= -1) {
             index++

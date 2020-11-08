@@ -2,13 +2,13 @@ body { overflow-x:hidden}
 
 nav { width: 100%; }
 
-.nerdFactory_logo{
+.whatap_logo{
 	width: 100px;
 	float: left;
 	margin: 15px;
 }
 @media(max-width: 768px){
-	.nerdFactory_logo{
+	.whatap_logo{
 		padding-top: 5px;
 	}
 }
@@ -22,7 +22,7 @@ nav { width: 100%; }
   background: #fff;
 }
 
-.nerdFactory_head{
+.whatap_head{
 	max-width: calc(980px + (10px * 2));
 	max-width: -webkit-calc(980px + (10px * 2));
   margin-right: auto;
@@ -31,7 +31,7 @@ nav { width: 100%; }
   padding-left: 30px;
 }
 @media screen and (max-width: 800px){
-	.nerdFactory_head {
+	.whatap_head {
     max-width: calc(980px + (10px));
 		max-width: -webkit-calc(980px + (10px));
     max-width: calc(980px + (10px));
