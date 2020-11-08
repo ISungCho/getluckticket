@@ -242,7 +242,7 @@ a > img{
 	float: left;
 	margin-top: 30px;
 	margin-bottom: 15px;
-	opacity: 0.3
+	/* opacity: 0.3 */
 } 
 
 .sectionOne_box:hover {
@@ -273,7 +273,7 @@ a > img{
 	margin-bottom: 33px;
 	padding: 25px;
 	text-align: center;
-	opacity: 0.3
+	/* opacity: 0.3; */
 } 
 
 .sectionTwo_box:hover {
