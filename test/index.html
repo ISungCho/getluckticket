@@ -48,8 +48,6 @@
     const target = document.getElementById('target')
     const targetRect = target.getBoundingClientRect()
 
-    const colors = ['#000000', '#0c1445', '#4c408e', '#5c54a4', '#4c408e', '#38285c', '#0c1445']
-    let colorIndex = -1
     document.addEventListener('mousemove', (e) => {
       const x = e.clientX
       const y = e.clientY
@@ -58,12 +56,10 @@
       vLine.style.transform = `translateX(${x}px)`
     })
     document.addEventListener('click', (e) => {
-      if (colorIndex >= colors.length) {
-        colorIndex = 0
-      } else {
-        colorIndex++
-      }
-      container.style.backgroundColor = colors[colorIndex]
+      container.style.backgroundColor = '#582020'
+      setTimeout(() => {
+        container.style.backgroundColor = '#000000'
+      }, 100)
     })
   </script>
 </html>
